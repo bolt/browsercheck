@@ -1,0 +1,4 @@
+# An example of a services.yaml file in an extension
+twig:
+  globals:
+    browsercheck: '@Bolt\Browsercheck\BrowsercheckDeviceDetector'

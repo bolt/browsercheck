@@ -1,0 +1,31 @@
+{
+    "name": "bolt/browsercheck",
+    "description": "\uD83D\uDCBB This Bolt extension works with the User-Agent to detect devices (desktop, tablet, mobile, etc.), clients, operating systems, brands and models.",
+    "type": "bolt-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivo Valchev",
+            "email": "ivo@twokings.nl"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.3",
+        "twig/twig": "^2.12 | ^3.0",
+        "matomo/device-detector": "^4.0"
+    },
+    "require-dev": {
+        "bolt/core": "^4.0.0",
+        "symplify/easy-coding-standard": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bolt\\Browsercheck\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "entrypoint": "Bolt\\Browsercheck\\Extension"
+    }
+}
