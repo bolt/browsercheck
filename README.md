@@ -1,7 +1,5 @@
 # 💻 Bolt Browsercheck Extension
 
-Author: Ivo Valchev
-
 This Bolt extension works with the User-Agent to detect devices (desktop, tablet, mobile, etc.), 
 clients, operating systems, brands and models.
 
