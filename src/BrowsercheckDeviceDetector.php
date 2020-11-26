@@ -11,7 +11,13 @@ class BrowsercheckDeviceDetector extends DeviceDetector
 {
     public function __construct(RequestStack $requestStack, string $userAgent = '')
     {
-        $userAgent = $requestStack->getCurrentRequest()->headers->get('User-Agent');
+        $request = $requestStack->getCurrentRequest();
+
+        if (! $request) {
+            return;
+        }
+
+        $userAgent = $request->headers->get('User-Agent');
         parent::__construct($userAgent);
         self::parse();
     }
